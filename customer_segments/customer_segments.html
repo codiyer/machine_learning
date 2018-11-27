@@ -11804,7 +11804,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Import libraries necessary for this project</span>
@@ -11862,7 +11862,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Display a description of the dataset</span>
@@ -12005,7 +12005,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">##### TODO: Select three indices of your choice you wish to sample from the dataset</span>
@@ -12134,9 +12134,9 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong> <br/>
-Index 10 (0)- Small Supermarket - This sample seems to be like a small supermarket given that it is spending on all the items in fairly good amount. <br/><br/>
-Index 80 (1) - Restaurant/Cafe - This sample looks like a restaurant or cafe with adequate spending of Fresh food and other items in small numbers. <br/><br/>
-Index 150 (2) - Supplier - This sample looks like a supplier mainly of freshfood because of large spending on the same and other items in meagre quantity.<br/><br/></p>
+Index 10 (0)- Small Supermarket - This sample seems to be like a small supermarket given that it is spending on all the items in fairly good amount. We can see that the spending for Grocery, Frozen,Detergents Paper and Delicatessen is more than the mean of the respective categories whereas the it isn't the case in Fresh and Milk. This tells us that the customer is stocking items which is not perishable and can be stored. Thus it seems to be a small supermarket. <br/><br/>
+Index 80 (1) - Restaurant/Cafe - In this sample, we see that all the purchases are below the mean values of respective categories but is considerably near to 50% of the value for Fresh, Grocery. This suggest that the customer may be a small restaurant or an eatery/road side stall which may explain the less than mean expenditure but yet high spending on Fresh food. <br/><br/>
+Index 150 (2) - Supplier - This sample looks like a supplier mainly of Fresh beacuse we can see that the spending on all items except Fresh is way below the mean values of the categories but in case of Fresh it is higher than mean and infact nears to 75% of its value. This implies that the customer has his business around the Fresh food mainly which may suggest that it is a whole sale supplier of Fresh Food.<br/><br/></p>
 
 </div>
 </div>
@@ -12162,7 +12162,7 @@ Index 150 (2) - Supplier - This sample looks like a supplier mainly of freshfood
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">train_test_split</span>
@@ -12244,7 +12244,7 @@ Low score tells us that the feature is hard to predict and hence it is relavant 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Produce a scatter matrix for each pair of features in the data</span>
@@ -12293,7 +12293,7 @@ Low score tells us that the feature is hard to predict and hence it is relavant 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
@@ -12310,13 +12310,13 @@ Low score tells us that the feature is hard to predict and hence it is relavant 
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[21]:</div>
+<div class="prompt output_prompt">Out[7]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x12aed1240&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x12b1b1e48&gt;</pre>
 </div>
 
 </div>
@@ -12398,7 +12398,7 @@ There are some pairs of features exhibiting correlation, namely:</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Scale the data using the natural logarithm</span>
@@ -12462,7 +12462,7 @@ There are some pairs of features exhibiting correlation, namely:</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Display the log-transformed sample data</span>
@@ -12569,10 +12569,11 @@ Once you have performed this implementation, the dataset will be stored in the v
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># For each feature find the data points with extreme high or low values</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="k">import</span> <span class="n">Counter</span>
+<span class="c1"># For each feature find the data points with extreme high or low values</span>
 <span class="n">outliers</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
 <span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">log_data</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
     
@@ -12592,6 +12593,9 @@ Once you have performed this implementation, the dataset will be stored in the v
     
     <span class="c1"># OPTIONAL: Select the indices for data points you wish to remove</span>
     <span class="n">outliers</span>  <span class="o">+=</span> <span class="n">feature_outlier</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+
+<span class="k">global</span> <span class="n">count</span>
+<span class="n">count</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="n">outliers</span><span class="p">)</span>
 
 <span class="c1">#converting the outliers to set to remove duplicate entries and converting back to list.</span>
 <span class="n">outliers</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">outliers</span><span class="p">))</span>
@@ -13357,10 +13361,14 @@ Once you have performed this implementation, the dataset will be stored in the v
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total Data:- &quot;</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">log_data</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Duplicate Points are: &quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">count</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">count</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">col</span><span class="p">),</span> <span class="s2">&quot;-&quot;</span> <span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">count</span><span class="p">[</span><span class="n">col</span><span class="p">]))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total Distinct Outliner = &quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">outliers</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total Number of Good data:- &quot;</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">good_data</span><span class="p">))</span>
 </pre></div>
@@ -13380,6 +13388,12 @@ Once you have performed this implementation, the dataset will be stored in the v
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Total Data:-  440
+Duplicate Points are: 
+65 - 2
+66 - 2
+128 - 2
+154 - 3
+75 - 2
 Total Distinct Outliner =  42
 Total Number of Good data:-  398
 </pre>
@@ -13505,11 +13519,11 @@ Moreover any algorithm like PCA will eventually discard this data in most occasi
 <ol>
 <li>The first PC accounts for <code>49.93%</code> where as the second PC accounts for <code>22.59%</code>. Both the first and second PCs account for <code>72.52%</code>.</li>
 <li>The first 2 PCs account for <code>49.93%</code> and <code>22.59%</code> respectively summing up to a total of <code>72.52%</code>. The third PC accounts for <code>10.49%</code> where as the forth one accounts for <code>9.78%</code>. Thus the first 4 PCs sums up to a total of <code>92.79%</code>.</li>
-<li>The <strong>first PC</strong> represents wide variety of feature set, mainly Detergent Paper, Grocery and Milk. It also represents Delicatessen to a certain extent but fails in case of Frozen and Fresh. It may represent some kind of supermarket.</li>
+<li>The <strong>first PC</strong> represents customers who spend highly in Detergents Papers, Grocery and Milk and less spending on Delicatessen, Frozen and Fresh. It represents some kind of Grocery stores.</li>
 </ol>
-<p>The <strong>second PC</strong> represents Frozen, Fresh and Delicatessen to a great extent and complements the first PC very well. It may represent some kind of small restaurant or fast food center.</p>
-<p>The <strong>third PC</strong> represents high spending on Delicatessen, average in Frozen and Milk but very less in case of Fresh and Detergent Papers. It shows the variation in Fresh and Delicatessen. It represents some corner shop bakery.</p>
-<p>The <strong>forth PC</strong> represents high spending on Milk and average to less spending in Grocery. It looks like some dairy.</p>
+<p>The <strong>second PC</strong> represents high spending Frozen, Fresh and Delicatessen and very low in other categories and complements the first PC very well. It may represent some kind of small restaurant or fast food center.</p>
+<p>The <strong>third PC</strong> represents high spending on Delicatessen and Fresh, average in Frozen, Milk and Detergents Paper but very less in case of Grocery. It shows the variation in Fresh and Delicatessen. It represents Deli or bakery.</p>
+<p>The <strong>forth PC</strong> represents high spending on Delicatessen, Frozen and average to less spending in Fresh and Detergent. It seems to like some Ice-cream parlour.</p>
 
 </div>
 </div>
@@ -13833,7 +13847,7 @@ Moreover any algorithm like PCA will eventually discard this data in most occasi
 The main advantage of K-means clustering is the computational efficiency and easy to implement. It can be fast even with high amount of data and variables. As the algorithm runs, with every iteration the clusters get more precise and the points can shift clusters accordingly. But as the points get more dense and less spaced out, it may be possible that K-means gives us improper results.</p>
 <p><strong>GMM</strong>
 The main advantage of GMM is that it can cluster points which belong to 2 separate Guasian Distributions and unlike K-means it is also capable of making clusters which are not spherical in shape. Thus it can cluster into many different shapes. The main disadvantage is that it lacks scalability.</p>
-<p>Given the distribution and the number of points, GMM seems to be the best fit for our data set.</p>
+<p>We know that K-means works best with spherical clusters. Also since we know that GMM is best for non-linear type of distribution. Main drawback of GMM is the computational power but since we have only around 400 data points this should not be an issue. Hence GMM is best fit for our data since we cannot assume it to be spherical clusters and also it is a non-linear type of distribution.</p>
 
 </div>
 </div>
@@ -14210,6 +14224,7 @@ This point was previously predicted to be a Supplier of Fresh food since their s
 <p><strong>Answer:</strong>
 The customer who are in Cluster 0 are surely not goind to respond positively for the change in the delivery service from 5 days a week to 3 days a week because this is going to affect thier business as this cluster predominantly represents restaurants, cafes, etc. Reducing the delivery service to this segment means that they need to stock more, but since they are into food business mainly, this means that they are bound to serve quality food to keep their food quality and serving relatively old stocked food is not going to appear good to thier brand.</p>
 <p>On the other hand, customers of Cluster 1 are predominantly stockists and reducing thier delivery service won't affect them as much as it does to customers of Cluster 0. Reducing thier delivery service means that now they need to order more in quantity and plan accordingly. This may seems like a problem, but it can be easily solved.</p>
+<p>Remembering the above thing, Company can run an A/B test by picking a subset of the cluster and getting their feedback for the change and getting to know whether they are happy with the change or not. If it gives success in a subset of particular cluster, Company an make a targetted approach to that particular segment of customers.</p>
 
 </div>
 </div>
